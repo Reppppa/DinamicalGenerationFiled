@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="box">
+        <table class="table">
+            <caption class="caption">Таблица</caption>
+            <tbody>
+                <tr class="column-name">
+                    <th>№</th>
+                    <th>Цвет</th>
+                    <th>Цена</th>
+                    <th>Активен</th>
+                    <th></th>
+                </tr>
+                <tr class="row template-row">
+                    <td class="row_item num">1</td>
+                    <td class="row_item"><input name="color" type="text" value=""></td>
+                    <td class="row_item"><input class="price" name="price" type="text" value="0"></td>
+                    <td class="row_item"><input class="checkbox" name="check" type="checkbox"></td>
+                    <td class="row_item"><button class="deleted_button"><img src="icon/ic_delete.svg" alt="Удалить"></button></td>
+                </tr>
+                <tr class="row">
+                    <td class="row_item num">1</td>
+                    <td class="row_item"><input name="color" type="text" value="Yellow"></td>
+                    <td class="row_item"><input class="price" name="price" type="text" value="3"></td>
+                    <td class="row_item"><input class="checkbox" name="check" type="checkbox"></td>
+                    <td class="row_item"><button class="deleted_button"><img src="icon/ic_delete.svg" alt="Удалить"></button></td>
+                </tr>
+            </tbody>
+            <tr class="result">
+                <th>Итог</th>
+                <td class="sum">0</td>
+            </tr>
+        </table>
+        <button class="add_button">Добавить новую строку</button>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
